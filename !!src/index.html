@@ -2,42 +2,91 @@
 <html>
 
 <head>
+	<meta charset="utf-8">
     <title>Персональная страница</title>
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
+	<!-- header -->
     <header>
-        <div class="content">
+        <div class="headercontent">
             <a class="logo left" href="index.html">
                 <h1>Александр Глушков</h1>
                 <h4>Персональная страница</h4>
             </a>
-            <nav>
-                <a href="index.html">Обо мне</a>
-                <a href="index.html">Блог</a>
-                <a href="index.html">Галерея</a>
-                <a href="index.html">Связаться со мной</a>
+            <nav class="floatright">
+				<ul>
+					<li class="color-blue">
+						<a class="nav_header" href="index.html?page=about">Обо мне</a>
+					</li>
+					<li class="color-red">
+						<a class="nav_header" href="index.html?page=blog">Блог</a>
+					</li>
+					<li class="color-khaki">
+						<a class="nav_header" href="index.html?page=gallery">Галерея</a>
+					</li>
+					<li class="color-coral">
+						<a class="nav_header" href="index.html?page=contact">Связаться со мной</a>
+					</li>
+				</ul>
             </nav>
             <div class="clearfix"></div>
         </div>
     </header>
-    <article class="content">
+	<!-- end header -->
+	<!-- content -->
+    <article  id="content" class="content">
     	<section class="abount">
-    		<img class="left" src="images/photo.jpg" alt="Фото">
+			<div class="image">
+				<img class="photo" src="images/kart_1_1024x600.jpg" alt="Фото">
+			</div>
+			<div class="info">
+				<div class="vopros">
+					<div class="bot">ФИО:</div>
+					<div class="bot">Дата рождения:</div>
+					<div class="bot">Образование:</div>
+				</div>
+				<div class="otvet">
+					<div class="bot">Глушков Александр Викторович</div>
+					<div class="bot">14.05.1984 (33 года)</div>
+					<div class="bot">Высшее (БНТУ)</div>
+				</div>
+			</div>
     		<div class="clearfix"></div>
     	</section>
     	<section class="hobbylist">
-    		<h1>Хобби</h1>
+			<h1>Хобби</h1>
+			<div class="richbox">
+				<div class="modulcontainer">
+					<div class="col-md col-md-left">
+						<h1>Пректы домов</h1>
+						<p>Эскизные, архитектурные и строительные проекты
+							домов и коттеджей, хозпостроек и любых объектов на участке, начиная от самых малых: (бань, гаражей, сараев), корректировка готовых проектов, проектная документация для объектов самовольного строительства и их согласования.</p>
+					</div>
+					<div class="col-md col-md-middle">
+						<h1>Реконструкция</h1>
+						<p>Проекты реконструкции домов, коттеджей, зданий: проекты 	пристроек, кровли, надстройки мансардного этажа, отдельного входа, разделение дома на две части, смена целевого назначения помещений и др.</p>
+					</div>
+					<div class="col-md col-md-right" >
+						<h1>Перепланировка</h1>
+						<p>Проекты перепланировки квартир, офисов: разработка проектно-сметной документации для согласования перепланировки помещения при ремонте для дальнейшего согласования и получения нового техпаспорта заказщиком.</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				
+			</div>
     		<div class="hobby">
-    			
+    			<iframe width="560" height="315" src="https://www.youtube.com/embed/rdvC57vCp5c?start=5" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
     		</div>
     	</section>
     </article>
-    <footer class="content">
-       <div class="clearfix"></div>
-        <hr/>
-        <p>© 2016
+	<!-- end content -->
+	
+    <footer class="content footer-inner">
+       
+        
+        <p>Copyright© 2010
             <span id="currentYear"></span> Александр Глушков</p>
     </footer>
 
